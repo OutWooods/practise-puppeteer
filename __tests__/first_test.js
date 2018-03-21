@@ -2,27 +2,6 @@ var path = require('path');
 var appRoot = path.resolve(__dirname);
 
 const puppeteer = require('puppeteer');
-var document = `<!DOCTYPE html>
-<html>
-<head>
-<title> hello </title>
-  <style>
-    @import url(https://fonts.googleapis.com/css?family=Signika);
-    body {
-      font-family: 'Signika', sans-serif;
-    }
-  </style>
-  <script>
-   function myFunction() {
-     document.getElementById('thing').innerHTML = 'pink';
-   }
-  </script>
-</head>
-<body>
-  <h1>Hello world!</h1>
-   <button onclick="myFunction()" id='thing'>Click me</button>
-</body>
-</html>`
 
 describe('Open ProntoTools Website', () => {
   var browser, page;
